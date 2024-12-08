@@ -278,14 +278,14 @@ function getTransformOptions(loader: "ts" | "jsx" | "tsx", sourcePath?: string):
       return {
         loader,
         jsx: "automatic",
-        jsxImportSource: "npm:react",
+        jsxImportSource: "npm:react@18.3.1",
         sourcefile: sourcePath
       };
     case "tsx":
       return {
         loader,
         jsx: "automatic",
-        jsxImportSource: "npm:react",
+        jsxImportSource: "npm:react@18.3.1",
         sourcefile: sourcePath,
         tsconfigRaw: '{"compilerOptions": {"verbatimModuleSyntax": true}}'
       };
